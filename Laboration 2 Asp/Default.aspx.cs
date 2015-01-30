@@ -12,14 +12,30 @@ namespace Laboration_2_Asp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SetFocus(UserTextBox);
+            
         }
 
         protected void RunButton_Click(object sender, EventArgs e)
         {
-            //ResultLabel.Text = Receipt.??(UserTextBox.Text);
-            RunButton.Visible = false;
-            ResetButton.Visible = true;
+            if (IsValid)
+            {
+                Receipt rs = new Receipt(double.Parse(UserTextBox.Text));
+
+                FirstSum.Text = string.Format("{0:c}", rs.SubTotal);
+                DiscountSum.Text = string.Format("{0:p0}", rs.DiscountRate);
+                AfterDiscount.Text = string.Format("{0:c}", rs.MoneyOff);
+                FinalSum.Text = string.Format("{0:c}", rs.Total);
+
+                FirstSum.Visible = true;
+                DiscountSum.Visible = true;
+                AfterDiscount.Visible = true;
+                FinalSum.Visible = true;
+                PlaceHolder.Visible = true;
+
+
+                RunButton.Visible = false;
+                ResetButton.Visible = true;
+            }
         }
     }
 }

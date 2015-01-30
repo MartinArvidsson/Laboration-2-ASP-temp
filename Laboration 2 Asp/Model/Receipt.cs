@@ -5,8 +5,11 @@ using System.Web;
 
 namespace Laboration_2_Asp.Model
 {
-    public static class Receipt
+    public  class Receipt
     {
+
+        private double _Subtotal;
+
  /*       public static float CalculateDiscount(float input)
         {
             float priceBeforeDiscount = input; //Priset innan några ändringar görs med den
@@ -37,59 +40,70 @@ namespace Laboration_2_Asp.Model
 
             return PercentageOff;
         }*/
-        public double DiscountRate
+        public Receipt(double subtotal)
         {
-            get
+            Calculate(subtotal);
+        }
+
+        public void Calculate(double subtotal)
+        {
+            SubTotal = subtotal;
+
+            if (subtotal > 0 && subtotal < 500)
             {
+                DiscountRate = 0;
+            }
+            if (subtotal > 499 && subtotal < 1000)
+            {
+                DiscountRate = 0.05;
                 
             }
-            set
+            if (subtotal > 999 && subtotal < 5000)
             {
-
+                DiscountRate = 0.10;
+                
             }
+            if (subtotal > 4999)
+            {
+                DiscountRate = 0.15;
+                
+            }
+            MoneyOff = DiscountRate * subtotal;
+            Total = subtotal - MoneyOff;
+        }
+        public double DiscountRate
+        {
+            get;
+            private set;
         }
 
         public double MoneyOff
         {
-            get
-            {
-
-            }
-            set
-            {
-
-            }
+            get;
+            private set;
         }
         public double SubTotal
         {
             get
             {
-
+                return _Subtotal;
             }
             set
             {
-
+                if(value <= 0 )
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                else
+                {
+                    _Subtotal = value;
+                }
             }
         }
         public double Total
         {
-            get
-            {
-
-            }
-            set
-            {
-
-            }
-        }
-        public static void Calculate(double subtotal)
-        {
-
-        }
-
-        public static Receipt(double subtotal)
-        {
-
+            get;
+            private set;
         }
     }
 }

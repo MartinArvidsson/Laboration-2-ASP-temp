@@ -1,6 +1,37 @@
 ﻿body {
+    background-color:aqua;
 }
-h1{
-    font-size:x-small;
-    font-style:italic;
+h1 {
+    font-size: small;
+    font-style:normal;
+}
+.Kvittoresultat{
+    font-style:normal;
+    margin-top:2px;
+    text-align:right;
+}
+.Kvittot{
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+    background-color:lightgray;
+    width:200px;
+    height:400px;
+}
+h2{
+    text-align:center;
+    border-bottom:solid 3px black;
+}
+.OpenWeekdays{
+    margin-top:2px;
+    text-align:center;
+    font-size: small;
+    font-style:normal;
+}
+.OpenWeekends{
+    margin-top:2px;
+    text-align:center;
+    font-size: small;
+    font-style:normal;
+    border-bottom:solid 2px black;
 }

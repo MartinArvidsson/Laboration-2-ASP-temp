@@ -49,6 +49,15 @@ namespace Laboration_2_Asp {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator NoEmptyTextBox;
         
         /// <summary>
+        /// ValidationOfNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator ValidationOfNumber;
+        
+        /// <summary>
         /// RunButton control.
         /// </summary>
         /// <remarks>
@@ -67,12 +76,48 @@ namespace Laboration_2_Asp {
         protected global::System.Web.UI.WebControls.Button ResetButton;
         
         /// <summary>
-        /// ResultLabel control.
+        /// PlaceHolder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ResultLabel;
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder;
+        
+        /// <summary>
+        /// FirstSum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FirstSum;
+        
+        /// <summary>
+        /// DiscountSum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DiscountSum;
+        
+        /// <summary>
+        /// AfterDiscount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label AfterDiscount;
+        
+        /// <summary>
+        /// FinalSum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FinalSum;
     }
 }
