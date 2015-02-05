@@ -26,15 +26,10 @@ namespace Laboration_2_Asp
                 AfterDiscount.Text = string.Format("{0:c}", rs.MoneyOff);
                 FinalSum.Text = string.Format("{0:c}", rs.Total);
 
-                FirstSum.Visible = true;
-                DiscountSum.Visible = true;
-                AfterDiscount.Visible = true;
-                FinalSum.Visible = true;
-                PlaceHolder.Visible = true;
-
-
                 RunButton.Visible = false;
                 ResetButton.Visible = true;
+
+                PlaceHolder.Visible = true;
             }
         }
     }

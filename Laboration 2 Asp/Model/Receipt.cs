@@ -49,25 +49,23 @@ namespace Laboration_2_Asp.Model
         {
             SubTotal = subtotal;
 
-            if (subtotal > 0 && subtotal < 500)
+            if (subtotal < 500)
             {
                 DiscountRate = 0;
             }
-            if (subtotal > 499 && subtotal < 1000)
+            else if (subtotal < 1000)
             {
                 DiscountRate = 0.05;
-                
             }
-            if (subtotal > 999 && subtotal < 5000)
+            else if (subtotal < 5000)
             {
                 DiscountRate = 0.10;
-                
             }
-            if (subtotal > 4999)
+            else
             {
                 DiscountRate = 0.15;
-                
             }
+
             MoneyOff = DiscountRate * subtotal;
             Total = subtotal - MoneyOff;
         }
@@ -88,7 +86,7 @@ namespace Laboration_2_Asp.Model
             {
                 return _Subtotal;
             }
-            set
+            private set
             {
                 if(value <= 0 )
                 {

@@ -1,20 +1,18 @@
 ﻿body {
-    background-color:aqua;
+    background-image:url(Backgroundpic.jpg)
 }
 h1 {
-    font-size: small;
+    font-size: 18px;
     font-style:normal;
-}
-.Kvittoresultat{
-    font-style:normal;
-    margin-top:2px;
-    text-align:right;
+    font-family:Arial;
+    text-align:center;
 }
 .Kvittot{
+    text-align:center;
     border-style:solid;
     border-width:thin;
     border-color:black;
-    background-color:lightgray;
+    background-color:rgba(0,0,0,0.2);
     width:200px;
     height:400px;
 }
@@ -34,4 +32,17 @@ h2{
     font-size: small;
     font-style:normal;
     border-bottom:solid 2px black;
+}
+#InputArea,#buttons,#Header,#UserTextBox{
+    text-align:center;
+}
+#KvittoArea{
+    margin-left:735px;
+    margin-top:95px;
+}
+
+#KvittoArea span{
+    font-style:normal;
+    margin-top:2px;
+    text-align:right;
 }

@@ -10,3 +10,9 @@ C:\Users\ma223ku\Desktop\ASP laboration 2\Laboration 2 Asp\bin\Laboration 2 Asp.
 C:\Users\ma223ku\Desktop\ASP laboration 2\Laboration 2 Asp\obj\Debug\Laboration 2 Asp.csprojResolveAssemblyReference.cache
 C:\Users\ma223ku\Desktop\ASP laboration 2\Laboration 2 Asp\obj\Debug\Laboration 2 Asp.dll
 C:\Users\ma223ku\Desktop\ASP laboration 2\Laboration 2 Asp\obj\Debug\Laboration 2 Asp.pdb
+C:\Users\ma223ku\Desktop\ASP 2 Klar\Laboration 2 Asp\bin\Laboration 2 Asp.dll.config
+C:\Users\ma223ku\Desktop\ASP 2 Klar\Laboration 2 Asp\bin\Laboration 2 Asp.dll
+C:\Users\ma223ku\Desktop\ASP 2 Klar\Laboration 2 Asp\bin\Laboration 2 Asp.pdb
+C:\Users\ma223ku\Desktop\ASP 2 Klar\Laboration 2 Asp\obj\Debug\Laboration 2 Asp.csprojResolveAssemblyReference.cache
+C:\Users\ma223ku\Desktop\ASP 2 Klar\Laboration 2 Asp\obj\Debug\Laboration 2 Asp.dll
+C:\Users\ma223ku\Desktop\ASP 2 Klar\Laboration 2 Asp\obj\Debug\Laboration 2 Asp.pdb
